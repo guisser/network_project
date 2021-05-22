@@ -7,15 +7,15 @@
 </head>
 <body>
 	  <h1>Registration</h1>
-      <form id="reg-form">
-      	<input type="text"  autocomplete= "off" id="Username" placeholder="Username" />
+      <form id="reg-form" action="/api/register" method="post">
+      	<input type="text"  autocomplete= "off" id="Username" placeholder="Username" name="username" />
       	<br>
-      	<input type="password"  autocomplete="off" id="password" placeholder="Password" />
+      	<input type="password"  autocomplete="off" id="password" placeholder="Password" name="password" />
       	<br>
       	<input type="submit" value="Submit Form" />
       </form>
 
-
+<!-- 
       <script>
       	const form =document.getElementById('reg-form')
       	form.addEventListener('submit',registerUser)
@@ -26,7 +26,7 @@
       		const password = document.getElementById('password').value
       		
 
-      		const result = await fetch('http://localhost:9999/api/register',
+      		const result = await fetch('http://localhost:3000/api/register',
       		{
       			method: 'POST',
       			headers :  {
@@ -41,6 +41,7 @@
       		console.log(result)
       	}
 
-      </script>
+      </script> -->
+
 </body>
 </html>
