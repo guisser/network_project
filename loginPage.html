@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
+	<title>Login page</title>
+</head>
+<body>
+	  <h1>Login</h1>
+      <form id="login" action="/api/loginPage" method="post">
+      	<input type="text"  autocomplete= "off" id="Username" placeholder="Username" name="username" />
+      	<br>
+      	<input type="password"  autocomplete="off" id="password" placeholder="Password" name="password" />
+      	<br>
+      	<input type="submit" value="Submit Form" />
+      </form>
+
+<!-- 
+      <script>
+      	const form =document.getElementById('reg-form')
+      	form.addEventListener('submit',registerUser)
+
+      	async function registerUser(event){
+      		event.preventDefault()
+      		const Username = document.getElementById('Username').value
+      		const password = document.getElementById('password').value
+      		
+
+      		const result = await fetch('http://localhost:3000/api/register',
+      		{
+      			method: 'POST',
+      			headers :  {
+      				'Content-Type': 'application/x-www-form-urlencoded'
+      			},
+      			body: JSON.stringify({
+      				Username,
+      				password
+      			})
+
+      		}).then((res) => res.json())
+      		console.log(result)
+      	}
+
+      </script> -->
+
+</body>
+</html>
